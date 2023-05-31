@@ -1,0 +1,179 @@
+.container {
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+/*header grejer*/
+header {
+  display: flex;
+  justify-content: end;
+}
+#score {
+  position: absolute;
+  right: 1%;
+}
+
+/*bild ruta*/
+#bild-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+#bild {
+  width: 20vw;
+}
+
+/*box för alla alternativ*/
+.alternativ {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(2, 48%);
+  gap: 1%;
+  bottom: 1%;
+  left: 1%;
+  width: 100vw;
+}
+
+/*alternativ boxar*/
+#alt1 {
+  background-color: aqua;
+}
+#alt2 {
+  background-color: chartreuse;
+}
+#alt3 {
+  background-color: blueviolet;
+}
+#alt4 {
+  background-color: chocolate;
+}
+.alla-alt {
+  padding: 5vw 10vh;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+/*namn text*/
+#namn1 {
+}
+#namn2 {
+}
+#namn3 {
+}
+#namn4 {
+}
+.namn {
+  display: flex;
+}
+
+/*animations*/
+.activated {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  90% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+body {
+  animation-name: test;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes test {
+  0% {
+    background-color: orange;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: orange;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+
+.startPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+  place-items: center;
+  gap: 1rem;
+
+  animation-name: test;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.button {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  padding: 2em;
+  outline: 2px solid black;
+  width: 20%;
+}
+
+.hidden {
+  z-index: -100;
+  display: none;
+}
+
+.startPage > p > a {
+  padding: 0.5rem;
+  background-color: white;
+  outline: 2px solid black;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  z-index: -1000000;
+  position: absolute;
+  opacity: 0;
+}

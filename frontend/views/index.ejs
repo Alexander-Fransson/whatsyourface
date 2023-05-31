@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wew</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="get-names">
+      <input type="text" value="<%=names%>">
+    </div>
+
+    <div>
+      <form action="/post/">
+        <input type="text" name="input">
+        <input type="submit">
+      </form>
+    </div>
+
+    <!-- <div class="container">
+      <form class="startPage">
+        <h1>What's Their Face!</h1>
+        <div class="button" id="play">Play!</div>
+        <div class="button" id="info">Info!</div>
+        <label class="button hidden" id="names">
+          <input type="file" accept="text/txt" />
+          Input TXT file of names!
+        </label>
+        <p class="hidden">
+          Names should be written with only one persons first and lastname on
+          each row with a space dividing them as per the
+          <a class="showExample">example</a>
+        </p>
+        <label class="button hidden" id="pictures">
+          <input type="file" webkitdirectory directory multiple />
+          Input folder of pictures!
+        </label>
+        <p class="hidden">
+          The names of the images should be "firstname-lastname.jpeg" all in
+          lowercase
+        </p>
+        <div class="button hidden" id="startGame">Play!</div>
+        <p class="hidden">
+          Test the game with our preloaded images!
+        </p>
+      </form>
+      <p class="temp">reset</p>
+      <header>
+        <h3 id="score">
+          score:
+        </h3>
+      </header>
+
+      <div id="bild-container">
+        <img href="" alt="klasskompis" id="bild" />
+      </div>
+
+      <div class="alternativ">
+        <div id="alt1" class="alla-alt"></div>
+        <div id="alt2" class="alla-alt"></div>
+        <div id="alt3" class="alla-alt"></div>
+        <div id="alt4" class="alla-alt"></div>
+      </div>
+    </div> -->
+  </body>
+  <script src="./js/script.js"></script>
+</html>
